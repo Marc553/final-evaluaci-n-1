@@ -489,6 +489,7 @@ GameObject:
   - component: {fileID: 2736856429709262854}
   - component: {fileID: 2736856429709262855}
   - component: {fileID: 2736856429709262852}
+  - component: {fileID: 6448457684398836095}
   m_Layer: 0
   m_Name: helice_grande
   m_TagString: Untagged
@@ -572,6 +573,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6448457684398836095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736856429709262853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf405598abda0334cacd92b40bd87f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z: 300
 --- !u!1 &2736856429751189833
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +789,7 @@ GameObject:
   - component: {fileID: 2736856429781917648}
   - component: {fileID: 2736856429781917649}
   - component: {fileID: 2736856429781917678}
+  - component: {fileID: 5779067646510137865}
   m_Layer: 0
   m_Name: aspa_trasera (1)
   m_TagString: Untagged
@@ -858,6 +873,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5779067646510137865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736856429781917679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf405598abda0334cacd92b40bd87f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z: 0
 --- !u!1 &2736856429891516996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1279,7 @@ GameObject:
   - component: {fileID: 2736856430950599211}
   - component: {fileID: 2736856430950599208}
   - component: {fileID: 2736856430950599209}
+  - component: {fileID: 1600425745208723620}
   m_Layer: 0
   m_Name: aspa_trasera
   m_TagString: Untagged
@@ -1334,6 +1363,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1600425745208723620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736856430950599206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf405598abda0334cacd92b40bd87f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z: 0
 --- !u!1 &2736856431056157122
 GameObject:
   m_ObjectHideFlags: 0
