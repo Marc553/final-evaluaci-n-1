@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7988569165337213081}
   - component: {fileID: 6615201550394569183}
   - component: {fileID: 7381403286504909705}
-  - component: {fileID: 8118233321658116786}
   m_Layer: 0
   m_Name: cuerpo (1)
   m_TagString: Untagged
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8118233321658116786
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89846914474500003}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &419660972753384425
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +92,6 @@ GameObject:
   - component: {fileID: 8623328253651430710}
   - component: {fileID: 3368846765130003010}
   - component: {fileID: 2651738094193071629}
-  - component: {fileID: 8050096640301355432}
   m_Layer: 0
   m_Name: cuerpo
   m_TagString: Untagged
@@ -178,20 +162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8050096640301355432
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419660972753384425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &694161224116424126
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +173,6 @@ GameObject:
   - component: {fileID: 4873168722328926736}
   - component: {fileID: 6372778730753113200}
   - component: {fileID: 8798251834231864068}
-  - component: {fileID: 5350235414826793032}
   m_Layer: 0
   m_Name: FUEGITO (1)
   m_TagString: Untagged
@@ -274,19 +243,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5350235414826793032
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694161224116424126}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1464614256239690638
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4749673802338146432}
+  - component: {fileID: 2752279100027952806}
   m_Layer: 0
   m_Name: 'Projectil '
   m_TagString: Untagged
@@ -326,6 +283,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2752279100027952806
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464614256239690638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.34519312
+  m_Height: 3.135703
+  m_Direction: 2
+  m_Center: {x: 0.0031593144, y: 0, z: 0.06318641}
 --- !u!1 &3970427739357033250
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +308,6 @@ GameObject:
   - component: {fileID: 6061710279002673934}
   - component: {fileID: 2233428227997776253}
   - component: {fileID: 5278109591119853375}
-  - component: {fileID: 831898982075291498}
   m_Layer: 0
   m_Name: FUEGITO (2)
   m_TagString: Untagged
@@ -408,19 +378,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &831898982075291498
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3970427739357033250}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4777626737844520904
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +389,6 @@ GameObject:
   - component: {fileID: 8645885183435408297}
   - component: {fileID: 1858072774717241454}
   - component: {fileID: 209182275851388821}
-  - component: {fileID: 4462427950228352584}
   m_Layer: 0
   m_Name: FUEGITO (3)
   m_TagString: Untagged
@@ -503,19 +459,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &4462427950228352584
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4777626737844520904}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6373528318128028525
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,7 +470,6 @@ GameObject:
   - component: {fileID: 575701743605019161}
   - component: {fileID: 5081804287497767741}
   - component: {fileID: 4837195219577356203}
-  - component: {fileID: 270653129229269936}
   m_Layer: 0
   m_Name: FUEGITO (4)
   m_TagString: Untagged
@@ -598,19 +540,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &270653129229269936
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373528318128028525}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8387807052889581467
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +551,6 @@ GameObject:
   - component: {fileID: 33525047932118986}
   - component: {fileID: 3668803740013547369}
   - component: {fileID: 196086070146414743}
-  - component: {fileID: 1107698856490015288}
   m_Layer: 0
   m_Name: FUEGITO
   m_TagString: Untagged
@@ -693,19 +621,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1107698856490015288
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8387807052889581467}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8909495869989934420
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +632,6 @@ GameObject:
   - component: {fileID: 3749711228997837879}
   - component: {fileID: 3051108589931492083}
   - component: {fileID: 2540317832261835224}
-  - component: {fileID: 8031640684415581265}
   m_Layer: 0
   m_Name: cuerpo (2)
   m_TagString: Untagged
@@ -788,20 +702,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8031640684415581265
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909495869989934420}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &9140427790660529357
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +713,6 @@ GameObject:
   - component: {fileID: 1660001005067089478}
   - component: {fileID: 5559851671968356687}
   - component: {fileID: 4344705707024944539}
-  - component: {fileID: 5262816486139198650}
   m_Layer: 0
   m_Name: punta
   m_TagString: Untagged
@@ -884,16 +783,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5262816486139198650
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9140427790660529357}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
