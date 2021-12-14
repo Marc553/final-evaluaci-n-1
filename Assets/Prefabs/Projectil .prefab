@@ -253,6 +253,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4749673802338146432}
   - component: {fileID: 2752279100027952806}
+  - component: {fileID: 1669619367101775851}
+  - component: {fileID: 7143101452566949996}
   m_Layer: 0
   m_Name: 'Projectil '
   m_TagString: Untagged
@@ -297,6 +299,31 @@ CapsuleCollider:
   m_Height: 3.135703
   m_Direction: 2
   m_Center: {x: 0.0031593144, y: 0, z: 0.06318641}
+--- !u!114 &1669619367101775851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464614256239690638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2beb675bb86264ba3b52dbe2f06feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7143101452566949996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464614256239690638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9bcc6701e00414bb3c1a9436395bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 50
 --- !u!1 &3970427739357033250
 GameObject:
   m_ObjectHideFlags: 0

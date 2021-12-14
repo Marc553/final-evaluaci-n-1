@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //La velocidad que alcanzará 
-    public float Speed = 5f;
+    public float Speed = 22f;
     private float horizontalInput;
     private float verticalInput;
     private float turnSpeed = 22f;
     private float xyRange = 200;
+    public GameObject projectilPrefab;
 
     void Start()
     {
@@ -62,7 +63,28 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -xyRange);
         }
+        
+        //Disparo 
+        if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            Instantiate(projectilPrefab, transform.position, transform.rotation);
+        }
 
+        /*private void OnCollisionEnter(Collision otherCollider)
+        {
+            //me permite saltar( cohca contra el objeto ETIQUETADO como "reoclectable")
+            if (otherCollider.gameObject.CompareTag("Ground"))
+            {
+                isOnTheGround = true;
+            }
 
-    }    
+            //Muero(Hará una acción cuando coqué contra el objeto ETIQUETADO como "Obatcle")
+            if (otherCollider.gameObject.CompareTag("Obstacle"))
+            {
+                //Morir
+            }*/
+        }    
+
+    
+
 }
