@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private float turnSpeed = 22f;
     private float xyRange = 200;
     public GameObject projectilPrefab;
+    [SerializeField] int contador = 0;
 
     void Start()
     {
@@ -30,61 +31,72 @@ public class PlayerController : MonoBehaviour
         //Da la orden para moverse en Z
 
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
-        
+
         //Limite de X
         if (transform.position.x > xyRange)
         {
             transform.position = new Vector3(xyRange, transform.position.y, transform.position.z);
-        }   
-        
+        }
+
         if (transform.position.x < -xyRange)
         {
             transform.position = new Vector3(-xyRange, transform.position.y, transform.position.z);
-        } 
-        
+        }
+
         //Limite de Y
         if (transform.position.y > xyRange)
         {
-            transform.position = new Vector3(transform.position.x, xyRange , transform.position.z);
+            transform.position = new Vector3(transform.position.x, xyRange, transform.position.z);
         }
-        
+
         if (transform.position.y < 0)
         {
-            transform.position = new Vector3(transform.position.x, 0 , transform.position.z);
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
-        
+
         //Limite de Z
         if (transform.position.z > xyRange)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, xyRange);
         }
-        
+
         if (transform.position.z < -xyRange)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -xyRange);
         }
-        
+
         //Disparo 
         if (Input.GetKeyDown(KeyCode.RightControl))
         {
             Instantiate(projectilPrefab, transform.position, transform.rotation);
         }
 
-        /*private void OnCollisionEnter(Collision otherCollider)
+        //contador
+
+    }
+
+
+    private void OnTriggerEnter(Collider otherCollider)
+    {
+        //Recolecta y cuenta los que has recolectado, sale mensaje de que has ganado al llegar a 10 cuando coqué contra el objeto ETIQUETADO como "recolectable"
+        if (gameObject.CompareTag("Player") && otherCollider.gameObject.CompareTag("recolectable"))
         {
-            //me permite saltar( cohca contra el objeto ETIQUETADO como "reoclectable")
-            if (otherCollider.gameObject.CompareTag("Ground"))
+            contador += 1;
+            Debug.Log($"Tienes {contador} recolectables.");
+            if (contador == 10)
             {
-                isOnTheGround = true;
+                Debug.Log("¡ENHORABUENA, HAS GANADO!");
             }
+        }
 
-            //Muero(Hará una acción cuando coqué contra el objeto ETIQUETADO como "Obatcle")
-            if (otherCollider.gameObject.CompareTag("Obstacle"))
-            {
-                //Morir
-            }*/
-        }    
+        //Muero(Hará una acción cuando coqué contra el objeto ETIQUETADO como "obatcle")
+        if (gameObject.CompareTag("Player") && otherCollider.gameObject.CompareTag("obstacle"))
+        {
+            Debug.Log("GAME OVER");
+            Time.timeScale = 0;
+        }
+    }
 
-    
 
 }
+    

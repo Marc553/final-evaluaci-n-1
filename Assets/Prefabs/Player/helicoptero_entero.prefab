@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3685289631410930421}
   - component: {fileID: 4081302616187560739}
+  - component: {fileID: 7367646179787498553}
   m_Layer: 0
   m_Name: helicoptero_entero
   m_TagString: Untagged
@@ -47,6 +48,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 22
+  projectilPrefab: {fileID: 0}
+--- !u!136 &7367646179787498553
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7208335352724475431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.3839421
+  m_Height: 17.939014
+  m_Direction: 2
+  m_Center: {x: -0.033148766, y: 4.2761903, z: 0.04972267}
 --- !u!1001 &5770343541368504353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54,6 +70,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3685289631410930421}
     m_Modifications:
+    - target: {fileID: 2736856429287498634, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736856429550255875, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736856429751189832, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736856429765609261, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736856430104539678, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736856430598516339, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736856430723892833, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116457017292561945, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -98,11 +142,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5140396342117862437, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8161345954331357416, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
       propertyPath: m_Name
       value: Helicoptero
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2736856431056157125, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d8789ad18c1fc7f41b1fa4d10f40eff9, type: 3}
 --- !u!4 &7580955893733154360 stripped
 Transform:
