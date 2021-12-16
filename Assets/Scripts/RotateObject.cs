@@ -6,8 +6,6 @@ public class RotateObject : MonoBehaviour
 {
     //public float Speed = 5f;
     public float z = 0f;
- 
-
     void Update()
     {
         //Da la orden para rotar tod el rato

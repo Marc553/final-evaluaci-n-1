@@ -4,28 +4,26 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    private float xRange = 200f;
-    private float yRange = 200f;
-    private float zRange = 200f;
-    
-
+    private float Range = 300f;
+   
+  
     void Update()
     {
         //Bala fallida
         //eje x
-        if(transform.position.x > xRange || transform.position.x < -xRange)
+        if(transform.position.x > Range || transform.position.x < -Range)
         {
             Destroy(gameObject);
         }
         
         //eje y
-        if(transform.position.x > yRange || transform.position.x < 0)
+        if(transform.position.y > Range || transform.position.y < 0)
         {
             Destroy(gameObject);
         }
-        
+
         //eje z
-        if(transform.position.x > zRange || transform.position.x < -zRange)
+        if (transform.position.z > Range || transform.position.z < -Range)
         {
             Destroy(gameObject);
         }

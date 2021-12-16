@@ -1384,7 +1384,6 @@ GameObject:
   - component: {fileID: 2736856431056157126}
   - component: {fileID: 2736856431056157127}
   - component: {fileID: 2736856431056157124}
-  - component: {fileID: 2736856431056157125}
   m_Layer: 0
   m_Name: 'cuerpo '
   m_TagString: Untagged
@@ -1455,20 +1454,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2736856431056157125
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2736856431056157122}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.47336468
-  m_Height: 1.0000001
-  m_Direction: 2
-  m_Center: {x: -0.0031758593, y: 0.0000001007045, z: 0}
 --- !u!1 &2736856431150672233
 GameObject:
   m_ObjectHideFlags: 0

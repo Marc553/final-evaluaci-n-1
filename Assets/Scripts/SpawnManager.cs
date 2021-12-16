@@ -19,15 +19,15 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnObstacle", startTmie, repeatRate);
     }
-
+    //limites en X,Y,Z
     public Vector3 RandomSpawnPosition()
     {
         randomZ = Random.Range(-zRange, zRange);
         randomX = Random.Range(-xRange, xRange);
         randomY = Random.Range(0, yRange);
-        return new Vector3(randomX, 0, randomZ);
+        return new Vector3(randomX, randomY, randomZ);
     }
-
+    //Spawnea los obstaculos
     public void SpawnObstacle()
     {
         randomIdex = Random.Range(0, obstaclePrefabs.Length); //numero entre 0 y maximo numero d objetos d mi "animalPrefabs
